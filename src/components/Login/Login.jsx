@@ -40,7 +40,7 @@ const Login = () => {
           <div>
             <Input
               label="Email: "
-              placeholder="Enter you email"
+              placeholder="Enter your email"
               type="email"
               {...register("email", {
                 required: true,
@@ -51,6 +51,13 @@ const Login = () => {
                 },
               })}
             />
+            <Input
+              label="Password: "
+              placeholder="Enter your password"
+              type="passwword"
+              {...register("password", { required: true })}
+            />
+            <Button type="submit">Sign In</Button>
           </div>
         </form>
       </div>
